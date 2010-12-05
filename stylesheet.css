@@ -1,0 +1,174 @@
+	@media screen {
+	/*    on the screen       */
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font: 15px/19px verdana, serif;
+	color: #FFF;
+	background: #6A96BB url('bg_gr.jpg') repeat-x top;
+}
+
+#content h1, #content h2, #content h3, #content h4, #content h5 {
+	/*   Headers inside the actual contentsbox     */
+  	text-align: center;
+}
+
+h1, h2, h3, h4 {font-family: "georgia", serif}
+
+#center {
+	/*   Makes the page in center of the viewport   */
+	position: relative;
+	width: 792px;
+	height: 100%;
+	margin: 0 auto;
+	background: transparent url('blog_gr.jpg') repeat-y top right;
+}
+
+#archives {
+	position: absolute;
+	left: -20px;
+	top: 280px;
+	width: 271px;
+}
+
+#archives h3 {
+	/*    the clouds graphic is a background of every h3 inside #achives    */
+	background: transparent url('category.gif') no-repeat top right;
+	padding: 0 15px;
+	margin: 0;
+	vertical-align: middle;
+	line-height: 30px;
+	height: 38px;
+	text-align: right;
+}
+
+#archives h4 {
+	margin-bottom: 0;
+}
+
+/*   the archives list is a real list, but I don't dots or numbers, and that I change with the following:    */
+
+#archives ul {
+	margin: 0 22px 0 0;
+	padding: 0 0 10px 0;
+}
+
+#archives ul li {
+	list-style-type: none;
+	text-align: right;
+	margin: 5px 0;
+}
+
+#archives ul li a {
+	text-decoration: none;
+	color: #2F3B55;
+	font-family: "georgia", "palatino linotype", "times new roman", serif;
+}
+
+#archives p {
+        text-align: right;
+	margin: 0 22px 0 0;
+	padding: 0 0 10px 0;
+}
+
+#archives ul li a:hover {color: #fff; text-decoration: underline;}
+
+
+#content {
+	/*    the actual content of the page     */
+	position: absolute;
+	top: 280px;
+	right: 0;
+        width: 488px;
+        padding-left: 35px;
+        padding-right: 35px;
+	background: transparent url('blog_gr.jpg') repeat-y top right;
+}
+
+#content a:link {
+        color: #C8E5FF;
+}
+
+#content a:visited {
+	color: #FFF;
+}
+
+#content p {
+	margin: 15px 0 15px 0;
+	text-align: justify;
+}
+
+#content h2 {
+	color: #C8E5FF;
+        margin-top: 0;
+}
+
+#content ul {
+   list-style-position: outside;
+   padding: 0;
+   padding-left: 1em;
+   margin: 0;
+}
+
+.index-map {
+   float: right;
+   padding-left: 1em;
+   text-align: center;
+}
+
+.index-map a:link, .index-map a:visited,
+.homepage a:link, .homepage a:visited {
+   text-decoration: none;
+   color: white;
+}
+
+#home {
+	/*   the box in the upper-left corner  */
+	position: absolute;
+	top: 0;
+        margin-top: 30px;
+	left: 30px;
+	width: 200px;
+	text-align: center;
+	z-index: 1;
+}
+
+#home * {
+	margin: 0;
+	padding: 3px 0;
+}
+
+
+/*   the top-graphic is made with these three elements:    */
+
+#top {
+  top: 0;
+  right: 5px;
+  width: 438px; 
+  height: 223px;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-color: #FFFFFF;
+  background-image: url('logo.png');
+  background-position: center;
+  padding-left: 25px; 
+  padding-right: 25px; 
+  margin-top: 30px; 
+  margin-left: 30px; 
+  margin-right: 30px;
+}
+
+
+	}
+	@media print {
+	/*    if out print it out on paper    */
+
+#home, #archives
+{
+display: none;
+}
+
+	}
